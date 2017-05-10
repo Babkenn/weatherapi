@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/day"
+    tools:context="com.example.babken.weatherapi3.MainActivity"
+    android:scaleType="centerCrop"
+
+    android:paddingLeft="10dp">
+
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     >
+     <AutoCompleteTextView xmlns:android="http://schemas.android.com/apk/res/android"
+         android:textColor="@color/White"
+         android:textSize="25sp"
+         android:height="70dp"
+         android:id="@+id/autocomplete_country"
+         android:layout_width="250dp"
+         android:layout_height="wrap_content"
+         android:hint="@string/hint"
+         android:textColorHint="@color/colorWhite"
+         android:ems="3"
+         />
+
+     <Button
+         android:background="@color/colorDark"
+         android:textColor="@color/colorWhite"
+         android:id="@+id/button_for_check"
+         android:text="@string/update"
+         android:textStyle="bold|italic"
+         android:layout_width="100dp"
+         android:textSize="20sp"
+         android:layout_height="wrap_content"
+         />
+
+ </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageview_id"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/weathericon"
+        />
+
+    <TextView
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:id="@+id/erorTextview"
+        android:textColor="@color/colorDarkRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+    <TextView
+        android:textStyle="bold|italic"
+        android:id="@+id/country_id"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/country"
+        android:paddingTop="5dp"
+        />
+    <TextView
+        android:textStyle="bold|italic"
+        android:text="@string/city"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+         />
+
+    <TextView
+        android:text="@string/temperature"
+        android:textStyle="bold|italic"
+        android:textColor="@color/White"
+        android:textSize="25dp"
+        android:id="@+id/city_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        />
+
+    <TextView
+        android:text="@string/humidity"
+        android:textStyle="bold|italic"
+        android:id="@+id/humidity_id"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:text="@string/wind"
+        android:textStyle="bold|italic"
+        android:id="@+id/wind_id"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:text="@string/date"
+        android:textStyle="bold|italic"
+        android:id="@+id/local_time_id"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"/>
+
+
+</LinearLayout>
